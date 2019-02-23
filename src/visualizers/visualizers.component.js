@@ -31,8 +31,8 @@ export class Visualizers extends Component {
                     range={context.audio.range}
                     config={this.props.config.eq}
                   /> : 
-                  (<div class="animationload">
-                      <div class="osahanloading"></div>
+                  (<div className="animationload">
+                      <div className="osahanloading"></div>
                   </div>)}
                 </div>
               </section>
@@ -43,8 +43,8 @@ export class Visualizers extends Component {
                     range={context.audio.range}
                     config={this.props.config.eq}
                   />: 
-                  (<div class="animationload">
-                      <div class="osahanloading"></div>
+                  (<div className="animationload">
+                      <div className="osahanloading"></div>
                   </div>)}
                 </div>
               </section>
@@ -52,16 +52,16 @@ export class Visualizers extends Component {
               <section className="visualizer-container d-flex flex-column justify-content-center">
                   <div className="visualizer d-flex flex-row align-items-center justify-content-center">
                     {context.audio ?  <Spectrum />: 
-                  (<div class="animationload">
-                      <div class="osahanloading"></div>
+                  (<div className="animationload">
+                      <div className="osahanloading"></div>
                   </div>)}
                   </div>
               </section>
               <section className="visualizer-container d-flex flex-column justify-content-center">
                   <div className="visualizer d-flex flex-row align-items-center justify-content-center">
                     {context.audio ?  <Spectrum />: 
-                  (<div class="animationload">
-                      <div class="osahanloading"></div>
+                  (<div className="animationload">
+                      <div className="osahanloading"></div>
                   </div>)}
                   </div>
               </section>

@@ -10,8 +10,14 @@ export class AudioListener extends Component {
     componentDidMount() {
         navigator.getUserMedia(
           { audio: {sampleRate:48000, channelCount: 2 } }, 
-          (stream) => this.context.setAudio(createAudioStream(stream)),
-          (err) => console.log(err)
+          (stream) => {
+              console.log('user accepted audio request');
+              this.context.setAudio(createAudioStream(stream));
+          },
+          (err) => {
+            console.log('user audio request error');
+            console.log(err);
+          }
         );
     }
 
