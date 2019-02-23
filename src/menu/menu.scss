@@ -1,0 +1,18 @@
+.menu {
+  position: absolute;
+  top: 0;
+  left: calc(-100vw);
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 125px 50px 50px;
+  z-index: 1;
+  
+  background: rgba(0,0,0,.6);
+  transform-origin: 0% 0%;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+  &.menu-open {
+    transform: translate(100%, 0);
+  }
+}

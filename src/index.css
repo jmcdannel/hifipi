@@ -1,6 +1,17 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	background-color:#000;
+	/* font-size: 0; */
+	color: aquamarine;
+}
+html{
+    max-width: 100vw;
+    overflow-x: hidden;
+}
 body {
-  margin: 0;
-  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -8,7 +19,68 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#root {
+	color: aquamarine;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+a
+{
+  text-decoration: none;
+  color: aquamarine;
+  transition: color 0.3s ease;
+}
+
+a:hover
+{
+  color: tomato;
+}
+.animationload {
+  background-color: #fff;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+}
+.osahanloading {
+  animation: 1.5s linear 0s normal none infinite running osahanloading;
+  background: #fed37f none repeat scroll 0 0;
+  border-radius: 50px;
+  height: 50px;
+  left: 50%;
+  margin-left: -25px;
+  margin-top: -25px;
+  position: absolute;
+  top: 50%;
+  width: 50px;
+}
+.osahanloading::after {
+  animation: 1.5s linear 0s normal none infinite running osahanloading_after;
+  border-color: #85d6de transparent;
+  border-radius: 80px;
+  border-style: solid;
+  border-width: 10px;
+  content: "";
+  height: 80px;
+  left: -15px;
+  position: absolute;
+  top: -15px;
+  width: 80px;
+}
+@keyframes osahanloading {
+0% {
+  transform: rotate(0deg);
+}
+50% {
+  background: #85d6de none repeat scroll 0 0;
+  transform: rotate(180deg);
+}
+100% {
+  transform: rotate(360deg);
+}
 }

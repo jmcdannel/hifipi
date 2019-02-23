@@ -1,26 +1,29 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import { config as defaultConfig } from './visualizers/visualizers.config';
+import { Menu } from './menu/menu.component';
+import { Visualizers } from './visualizers/visualizers.component';
+
+import { cloneDeep } from 'lodash';
+
+import './App.scss';
 
 class App extends Component {
+
+  state = { config: defaultConfig };
+
+  updateConfig(engineId, prop, value) {
+    const newconfig = cloneDeep(this.state.config);
+    newconfig[engineId][prop] = value;
+    this.setState({ config: newconfig });
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <React.Fragment>
+        <Menu config={this.state.config} updateConfig={this.updateConfig.bind(this)} />
+        <Visualizers config={this.state.config} />
+      </React.Fragment>
     );
   }
 }

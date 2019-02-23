@@ -1,0 +1,65 @@
+
+.menu-toggle {
+  position:fixed;
+  left: 20px;
+  top: 20px;
+  border: 0;
+  background: transparent;
+  z-index: 2;
+
+  &:active, 
+  &:hover, 
+  &:focus {
+    outline-width: 0 !important;
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  > span {
+    display: block;
+    width: 33px;
+    height: 2px;
+    margin-bottom: 7px;
+    position: relative;
+    
+    background-color: aquamarine;
+    opacity: 0.2;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background-color 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+    
+    &:nth-child(3) {
+      transform-origin: 0% 100%;
+    }
+  }
+  &.menu-toggle-open {
+
+    > span {
+
+      opacity: 1;
+      transform: rotate(45deg) translate(-2px, -1px);
+      background: tomato;
+    
+      &:nth-child(2) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+      }
+      
+      &:nth-child(3) {
+        opacity: 1;
+        transform: rotate(-45deg) translate(0, -1px);
+      }
+    }
+  }
+
+
+ }
+
+
+body:hover .menu-toggle >  span {
+  opacity: 1;
+}

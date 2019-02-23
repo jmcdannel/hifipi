@@ -1,0 +1,47 @@
+.slider-input-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(aquamarine, .5);
+  padding-left: 1em;
+
+  button {
+    border: none !important;
+    border-radius: 0;
+    &:active, 
+    &:hover, 
+    &:focus {
+      outline-width: 0 !important;
+      outline: none !important;
+      border: none !important;
+      box-shadow: none !important;
+    }
+  }
+}
+
+input[type=range] {
+  border: 1px solid aquamarine;
+  margin-left: 1em;
+  margin-right: 1em;
+  &:active, 
+  &:hover, 
+  &:focus {
+    outline-width: 0 !important;
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+}
+
+.slider-value {
+  margin: 0 auto;
+  background-color: lighten(#222, 5%);
+  color: aquamarine;
+  text-align: center;
+  padding: 10px;
+  border: 0;
+}
+
+.input-group-preppend {
+    min-width: 120px;
+    text-align: right;
+}

@@ -1,0 +1,29 @@
+# Roadmap
+
+- [x] Reactify
+- [-] Control Panel(s)
+  - sensitivity, peaks, labels?
+  - themes
+  - brightness
+  - configure bands
+  - playlists (spotify)
+- [x] flex layout for bands!!
+- [x] Knob for sensitivity
+- [x] Bootstrap / Menu
+- [ ] Themes
+- [?] Beat Sensor(s) or maybe fading, floating bubbles?
+- [x] Spectrum Analyzer
+- [x] Stereo (fake?)
+- [ ] Knobs for playlists
+- [ ] Album Art Widget
+- [ ] MetaData Widget
+- [ ] Designy Stuff
+- [ ] Volumio integration / player
+- [ ] Pi-powered physical knobs
+- [ ] Widgets? / Layouts
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+- [ ]
