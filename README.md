@@ -1,5 +1,18 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## About
+
+Presentation: https://docs.google.com/presentation/d/1-MUu0JOnb2V-adA31FugjVhoWYlBnh3wGwt4_RyU7nk/edit?usp=sharing
+
+Demo: [video](./demo.mov)
+
+This project was created to 
+A) learn about Ract design patterns. I like some that I used, I dislike others. 
+B) learn more about SVG animation
+C) explore `AudioContext` capabilities
+
+The orginal intent was to run this on a raspberry pi along with volumio.io for an all-inclusive hifi audio streaming solution. Reality set in when I discovered the raspberry pi is not nearly performant enough to drive this visualization.
+
 ## Available Scripts
 
 In the project directory, you can run:
